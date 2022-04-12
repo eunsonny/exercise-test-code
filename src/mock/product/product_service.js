@@ -1,9 +1,9 @@
-const ProductClient = require('./product_client');
+// stub version
 class ProductService {
-  constructor() {
-    this.ProductClient = new ProductClient();
+  constructor(ProductClient) {
+    this.ProductClient = ProductClient;
   }
-
+  
   fetchAvailableItems() {
     return this.ProductClient
     .fetchItems()
@@ -12,4 +12,6 @@ class ProductService {
 }
 
 module.exports = ProductService;
+
+
 

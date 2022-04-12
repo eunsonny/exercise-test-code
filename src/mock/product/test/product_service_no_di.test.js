@@ -26,5 +26,4 @@ describe('ProductService', () => {
     expect(items.length).toBe(1);
     expect(items).toEqual([{ item: 'banana', available: false }])
   });
-  
 });
